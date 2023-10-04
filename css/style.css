@@ -20,7 +20,7 @@ body {
 /* created a main row left */
 .row-left {
     border: red 10px solid;
-    background-image: url(../img/mine.jpg);
+    background-color: white;
     width: 35%;
     height: 100vh;
     margin: 0 auto;
@@ -103,8 +103,17 @@ body {
 }
 
 @media screen and (max-width: 668px) {
-    
+
 .icons-right {
+        display: none;
+    }
+}
+.action-call{
+    background-color: aquamarine;
+    min-height: 4rem;
+}
+@media screen and (max-width: 992px){
+    .action-call{
         display: none;
     }
 }
