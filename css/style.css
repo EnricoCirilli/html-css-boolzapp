@@ -76,12 +76,21 @@ body {
     width: 5rem;
 }
 
-/* setted the media queries for bot tablets and smartphone */
+/* setted the media queries for header left */
 @media screen and (max-width: 992px) {
 .icons-left {
         display: none;
     }
+.img-left {
+        width: 100vw;
+        border: 2px black solid;
+    }
 }
+@media screen and (max-width: 668px){
+    
+}
+
+/* styled header right */
 
 .header-right {
     background-color: aqua;
@@ -101,22 +110,27 @@ body {
     background-color: black;
     width: 5rem;
 }
+/* media query header right */
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 992px) {
 
 .icons-right {
         display: none;
     }
 }
+
+/* cta styled */
 .action-call{
     background-color: aquamarine;
     min-height: 4rem;
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 668px){
     .action-call{
         display: none;
     }
 }
+
+/* input styled */
 .input{
     border: 3px black solid;
     min-height: 4rem;
@@ -125,3 +139,34 @@ body {
     .input{
         display: none;
     }
+}
+
+/* avatar left col styled */
+.avatar-section{
+    border: 2px black solid;
+    min-height: 5rem;
+    display: flex;
+}
+.avatar-left{
+    background-color: orange;
+    border: 3px black solid;
+    min-height: 4rem;
+    width: 20rem;
+} 
+.avatar-right{
+    background-color: green;
+    border: 3px black solid;
+    min-height: 4rem;
+    width: 100vw;
+}
+@media screen and (max-width: 992px){
+    .avatar-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px){
+    .avatar-left{
+        width: 100vw;
+    }
+}
+/* end avatar left col styled */
