@@ -146,6 +146,7 @@ body {
 .avatar-section{
     min-height: 5rem;
     display: flex;
+    border: 2px solid red;
 }
 .avatar-left{
     border: 2px black solid;
@@ -164,7 +165,7 @@ body {
         display: none;
     }
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 668px){
     .avatar-left{
         width: 100vw;
     }
@@ -210,7 +211,31 @@ body {
    margin: 2rem;
    position: absolute;
    top: 91%;
-  margin: 0 auto;
-  width: 100%;
-  height: 8.9%;
+   margin: 0 auto;
+   width: 100%;
+   height: 8.9%;
+  
+}
+.footer-set ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.footer-left{
+    padding: 20px;
+}
+.footer-right{
+    padding: 20px;
+}
+.footer-center{
+    padding: 20px;
+    
+}
+@media screen and (max-width: 668px){
+    .footer-left{
+        display: none;
+    }
+    .footer-right{
+        display: none;
+    }
 }
