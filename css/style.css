@@ -117,3 +117,11 @@ body {
         display: none;
     }
 }
+.input{
+    border: 3px black solid;
+    min-height: 4rem;
+}
+@media screen and (max-width: 992px){
+    .input{
+        display: none;
+    }
