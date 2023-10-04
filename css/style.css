@@ -124,7 +124,7 @@ body {
     background-color: aquamarine;
     min-height: 4rem;
 }
-@media screen and (max-width: 668px){
+@media screen and (max-width: 992px){
     .action-call{
         display: none;
     }
