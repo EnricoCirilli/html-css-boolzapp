@@ -5,11 +5,13 @@
 }
 
 body {
-    background-color: grey;
+    
+    background:linear-gradient(green 1rem, grey 5rem);
 }
 
 /* set up main wrapper */
 .wrap-container {
+    border: 2px violet solid;;
     width: 80%;
     height: 100vh;
     display: flex;
@@ -21,15 +23,15 @@ body {
 .row-left {
     background-color: white;
     width: 35%;
-    height: 100vh;
-    border: 2px red solid;
+}
+.over-flow{
+    overflow-y: auto;
 }
 
 /* created a main row right */
 .row-right {
     background-image: url(../img/mine.jpg);
     width: 65%;
-    height: 100vh;
 }
 
 /* I added to both row media query for tablet and smartphone */
@@ -59,8 +61,8 @@ body {
 
 /* created an header to the left row */
 .header-left {
-    background-color: white;
-    min-height: 5vh;
+    background-color: red;
+    height: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -68,12 +70,12 @@ body {
 
 .img-left {
     background-color: orange;
-    width: 5rem;
+    width: 100px;
 }
 
 .icons-left {
     background-color: orange;
-    width: 5rem;
+    width: 100px;
 }
 
 /* setted the media queries for header left */
@@ -92,7 +94,7 @@ body {
 /* styled header right */
 
 .header-right {
-    min-height: 5vh;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     background-color: antiquewhite;
@@ -101,21 +103,20 @@ body {
 .img-right {
     background-color: green;
     border: black 2px solid;
-    width: 10rem;
+    width: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .icons-right {
-    width: 5rem;
+    border: black 2px solid;
+    width: 100px;
     background-color: green;
 }
 /* media query header right */
 
 @media screen and (max-width: 992px) {
-.img-right{
-        width: 100vw;
-    }
+
 .icons-right {
         display: none;
     }
@@ -123,8 +124,8 @@ body {
 
 /* cta styled */
 .action-call{
-    background-color: green;
-    min-height: 4rem;
+    background-color: aqua;
+    height: 100px;
 }
 @media screen and (max-width: 992px){
     .action-call{
@@ -134,7 +135,7 @@ body {
 
 /* input styled */
 .input{
-    min-height: 4rem;
+    height: 100px;
 }
 @media screen and (max-width: 992px){
     .input{
@@ -144,15 +145,15 @@ body {
 
 /* avatar left col styled */
 .avatar-section{
-    min-height: 5rem;
+   height: 100px;
     display: flex;
-    border: 2px solid red;
 }
 .avatar-left{
     border: 2px black solid;
     background-color: orange;
-    min-height: 4rem;
-    width: 20rem;
+    height: 100px;
+    width: 500px;
+    
 } 
 .avatar-right{
     border: 2px black solid;
@@ -206,14 +207,14 @@ body {
 }
 
 .footer{
-    background-color:antiquewhite;
-    
+   background-color:antiquewhite; 
    margin: 2rem;
    position: absolute;
    top: 91%;
    margin: 0 auto;
    width: 100%;
-   height: 8.9%;
+   height: 5rem;
+   position: absolute;
   
 }
 .footer-set ul {
@@ -223,14 +224,18 @@ body {
 }
 .footer-left{
     padding: 20px;
+    position: relative;
 }
 .footer-right{
     padding: 20px;
+    position: relative;
 }
 .footer-center{
     margin: 1rem;
-    padding: 1.3rem;
+    padding: 1rem;
     width: 500px;
+    border-radius: 5px;
+    position: relative;
 }
 @media screen and (max-width: 668px){
     .footer-left{
@@ -238,5 +243,8 @@ body {
     }
     .footer-right{
         display: none;
+    }
+    .footer-center{
+
     }
 }
