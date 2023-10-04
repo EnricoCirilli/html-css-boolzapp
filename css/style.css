@@ -1,80 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: grey;
 }
+
 /* set up main wrapper */
-.wrap-container{
+.wrap-container {
     width: 80%;
     height: 100vh;
     border: red 2px solid;
     display: flex;
     margin: 0 auto;
 }
+
 /* created a main row left */
-.row-left{
+.row-left {
     border: red 10px solid;
     background-image: url(../img/mine.jpg);
-    width: 50%;
+    width: 35%;
     height: 100vh;
     margin: 0 auto;
 }
+
 /* created a main row right */
-.row-right{
+.row-right {
     border: green 10px solid;
     background-image: url(../img/mine.jpg);
-    width: 50%;
+    width: 65%;
     height: 100vh;
     margin: 0 auto;
 }
+
 /* I added to both row media query for tablet and smartphone */
-@media screen and (max-width: 992px){
-    .row-left{
+@media screen and (max-width: 992px) {
+    .row-left {
         width: 15%;
     }
-    .row-right{
+
+    .row-right {
         width: 85%;
     }
 
 }
-@media screen and (max-width: 600px){
-    .row-left{
-       display: none;
+
+@media screen and (max-width: 668px) {
+    .row-left {
+        display: none;
     }
-    .row-right{
+
+    .row-right {
         width: 100%;
     }
 }
+
 /* created an header to the left row */
-.header-left{
+.header-left {
     background-color: aqua;
     min-height: 5vh;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.img-left{
+
+.img-left {
     background-color: brown;
     width: 5rem;
 }
-.icons-left{
+
+.icons-left {
     background-color: black;
     width: 5rem;
 }
+
 /* setted the media queries for bot tablets and smartphone */
-@media screen and (max-width: 992px){
-    .icons-left{
+@media screen and (max-width: 992px) {
+.icons-left {
         display: none;
     }
 }
 
+.header-right {
+    background-color: aqua;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
 
+.img-right {
+    background-color: brown;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.icons-right {
+    background-color: black;
+    width: 5rem;
+}
 
-
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 668px) {
+    
+.icons-right {
+        display: none;
+    }
 }
