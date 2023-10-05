@@ -31,10 +31,21 @@ body {
 .main-box{
     border: 2px red solid;
     width: 90%;
-}
-.right-column{
-
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 .left-column{
+    border: 2px green solid;
+    background-color: blue;
+    width: 30%;
+    height: 100%;  
+}
 
+.right-column{
+    border: 2px green solid;
+    background-color: blueviolet;
+width: 70%;
+height: 100%;
 }
