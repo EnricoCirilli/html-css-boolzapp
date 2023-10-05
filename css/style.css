@@ -28,7 +28,6 @@ img{
     display: none;
 }
 .right-column{
-    border: red solid 2px;
    display: flex;
    flex-direction: column;
    display: block;
@@ -145,6 +144,34 @@ hr{
     border-radius: 24px;
     padding: 20px;
 }
+.text-right{
+    padding-top: 10px;
+}
+.right-message a{
+    position: relative;
+    bottom: 110px;
+    left: 250px;
+    color: lightslategrey;
+}
+.time-right {
+    position: relative;
+    left: 197px;
+    top: 20px;
+    color: lightslategrey;
+}
+.left-message a{
+    position: relative;
+    bottom: 115px;
+    left: 250px;
+    color: lightslategrey;
+}
+.time-left{
+    position: relative;
+    left: 197px;
+    top: 20px;
+    color: lightslategrey;
+}
+
 .left-message{
    position: relative;
    top: 200px;
