@@ -58,10 +58,13 @@ img{
     display: flex;
     justify-content: space-evenly;
     align-items: start;
-    border: red solid 2px;
+ 
+    background-color: white;
 }
 .avatar img{
     width: 100px;
+    border-radius: 50%;
+    padding: 5px;
 }
 .avatar p{
     display: none;
@@ -103,8 +106,15 @@ img{
     .avatar p{
         display: block;
         padding: 3px;
+        margin-top: 4px;
+        margin-right: 5px;
     }
     .time{
-        margin-top: 2px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .name-description span{
+        color: grey;
+        font-size: 11px;
     }
 }
