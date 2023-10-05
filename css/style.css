@@ -52,6 +52,7 @@ img{
 }
 .avatar-list{
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
 
@@ -61,7 +62,6 @@ img{
        width: 10rem;
 
     }
-    
     
 }
 @media screen and (min-width: 991px){
@@ -78,5 +78,10 @@ img{
         display: inline-flex;
         width: 300px;  
     }
-    
+    .search-bar{
+        display: block;
+    }
+    .cta{
+        display: block;
+    }
 }
