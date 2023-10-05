@@ -54,6 +54,18 @@ img{
     flex-grow: 1;
     overflow-y: scroll;
 }
+.avatar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    border: red solid 2px;
+}
+.avatar img{
+    width: 100px;
+}
+.avatar p{
+    display: none;
+}
 
 
 @media screen and (min-width: 540px) {
@@ -76,12 +88,23 @@ img{
     }
     .left-column{
         display: inline-flex;
-        width: 300px;  
+        width: 350px;  
+    }
+    .right-column{
+        display: block;
+        width: 100%;
     }
     .search-bar{
         display: block;
     }
     .cta{
         display: block;
+    }
+    .avatar p{
+        display: block;
+        padding: 3px;
+    }
+    .time{
+        margin-top: 2px;
     }
 }
