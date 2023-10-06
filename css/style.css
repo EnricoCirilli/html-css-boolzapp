@@ -38,11 +38,8 @@ img{
     justify-content: space-between;
     align-items: center;
     background-color: #EAEAEA;
-    width: 56,25rem;
+    width: 56,2rem;
     height: 70px;
-    border: red solid 2px;
-   
-   
 }
 .right-img{
     display: flex;
@@ -61,7 +58,6 @@ img{
     height: 60px;
     border-radius: 50%;
     padding: 5px;
-    border: red solid 2px;
 }
 .name-right{
     padding: 20px;
@@ -84,7 +80,6 @@ img{
     align-items: center;
     padding: 5px;
     background-color: #EAEAEA;
-    border: red 2px solid;
 }
 .io img{
     padding: 5px;
@@ -142,7 +137,6 @@ hr{
 }
 
 .message{
-    border: red solid 2px;
     height: calc(100% - 70px - 70px);
     overflow-y: scroll;
     display: flex;
@@ -151,27 +145,29 @@ hr{
     
 }
 .message-right{
+    display: flex;
     min-height: 140px;
-    width: 300px;
-    border: red solid 2px;
+    width: 400px;
     background-color: #d5f9ba;
     align-self: flex-end;
     margin: 40px;
-   
+    border-radius: 12px;
+    padding: 20px;
 }
 .message-left{
+    display: flex;
     min-height: 140px;
-    width: 300px;
-    border: red solid 2px;
+    width: 400px;
     background-color: white;
     align-self: center;
     margin: 40px;
+    border-radius: 12px;
+    padding: 20px;
 }
 .footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: red solid 2px;
     height: 70px;
     background-color: beige
 }
@@ -189,7 +185,39 @@ hr{
 .microphone{
     color: grey;
 }
-
+.paragraph{
+    display: flex;
+}
+.paragraph-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+}
+.angle-down{
+    position: relative;
+  display: inline-block;
+}
+.angle-down:hover{
+    opacity: 0.5;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .angle-down:hover .dropdown-content {
+    display: block;
+}
 
 @media screen and (min-width: 540px) {
     .left-column{
