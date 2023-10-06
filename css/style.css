@@ -98,9 +98,17 @@ img{
     display: none;
 }
 .search-bar{
-    height: 50px;
     display: none;
+    border: #ded5d5 solid 6px;
+    height: 60px;
 }
+.search-bar input{
+    width: 250px;
+    margin-left:10px;
+    height: 40px;
+    border:0;
+}
+
 .avatar-list{
     flex-grow: 1;
     overflow-y: scroll;
